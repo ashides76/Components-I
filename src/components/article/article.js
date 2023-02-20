@@ -109,8 +109,6 @@ function articleMaker ({title, date, firstParagraph, secondParagraph, thirdParag
   article.classList.add('article')
   dateArticle.classList.add('date');
   expandButton.classList.add('expandButton')
-  // expandButton.cla
-  
   
   titleArticle.textContent = title;
   dateArticle.textContent = date;
@@ -130,7 +128,6 @@ function articleMaker ({title, date, firstParagraph, secondParagraph, thirdParag
 
 const articles = document.querySelector('.articles')
 console.log(articles);
-// console.log()
 data.forEach((val) => {
   articles.appendChild(articleMaker(val))
 })
